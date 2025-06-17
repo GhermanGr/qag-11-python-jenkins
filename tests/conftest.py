@@ -8,7 +8,3 @@ def setup_formpage_chrome():
     browser.open('https://demoqa.com/automation-practice-form')
     yield
     browser.close()
-
-@pytest.fixture()
-def fill_out_form(setup_formpage_chrome):
-    pass
