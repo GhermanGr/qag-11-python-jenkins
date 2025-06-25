@@ -35,7 +35,7 @@ def test_registration_form_send(setup_formpage_chrome):
 
 
     #Отправка картинки
-    browser.element('#uploadPicture').send_keys(r'D:\Python\Projects\qaguru-pb-hw\qaguru-pb-hw-5\tests\resources\man.jpg')
+    browser.element('#uploadPicture').send_keys(os.path.abspath('./resources/man.jpg'))
     #Относительный путь отправки картинки я не сделал, т.к. даже после просмотра разбора ДЗ я не понял, как это правильно делается. Буду разбираться потом.
 
     #Заполнение полей штата Rajasthan и города Jaiselmer
