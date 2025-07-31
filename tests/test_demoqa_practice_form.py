@@ -8,7 +8,7 @@ import conftest
 При заполнении всех обязательный полей в форме и нажатии на кнопку Submit, форма будет отправлена и
 отобразится её заполненный вариант, соответствующий тестовым данным.
 '''
-def test_registration_form_send(setup_formpage_chrome):
+def test_registration_form_send(setup_browser):
     #Заполнение базовых полей
     browser.element('#firstName').type('Johnny')
     browser.element('#lastName').type('Wicky')
