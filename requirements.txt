@@ -1,2 +1,4 @@
 selene==2.0.0rc9
 pytest
+allure-pytest==2.15.0
+selenium==4.34.0
