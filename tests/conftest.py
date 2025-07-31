@@ -22,6 +22,7 @@ def setup_browser(request):
     )
 
     browser = Browser(Config(driver))
+    browser.config.driver = driver
     yield browser
 
     browser.quit()
